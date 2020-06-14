@@ -1,0 +1,10 @@
+<div class="card mt-4">
+  <h4 class="card-header">Working on Angular 9 with JWT authentication</h4>
+  <div class="card-body">
+    <h6>List of all users</h6>
+    <div *ngIf="loading" class="spinner-border spinner-border-sm">...Loading</div>
+    <ul *ngIf="users">
+    <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+    </ul>
+  </div>
+</div>
